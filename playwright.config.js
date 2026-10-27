@@ -11,7 +11,6 @@ const path = require("path");
 export default defineConfig({
   testDir: "./tests",
 
-  globalSetup: require.resolve("./global-setup.js"),
 
   timeout: 180000, // 3 minutes per test
 
@@ -53,7 +52,6 @@ export default defineConfig({
   use: {
     // baseURL: "http://localhost:3000",
 
-    storageState: path.join(__dirname, "auth", "state.json"),
 
     actionTimeout: 30 * 1000,
 
